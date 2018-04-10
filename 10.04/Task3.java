@@ -22,10 +22,9 @@ public class Task3 {
 	private static void findCommonDividersHelper(int[] arr, int divider, int min) {
 		if (divider <= min) {
 			boolean isCommonDivider = true;
-			for (int i = 0; i < arr.length; i++) {
+			for (int i = 0; i < arr.length && isCommonDivider; i++) {
 				if (arr[i] % divider != 0) {
 					isCommonDivider = false;
-					break;
 				}
 			}
 			if (isCommonDivider) {
