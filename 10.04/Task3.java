@@ -20,7 +20,7 @@ public class Task3 {
 	}
 
 	private static void findCommonDividersHelper(int[] arr, int divider, int min) {
-		if (divider <= min/divider) {
+		if (divider <= min) {
 			boolean isCommonDivider = true;
 			for (int i = 0; i < arr.length; i++) {
 				if (arr[i] % divider != 0) {
